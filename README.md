@@ -27,6 +27,11 @@
 * [Validator](https://www.npmjs.com/package/validator)
 * [Chalk](https://www.npmjs.com/package/chalk)
 * [Axios](https://github.com/axios/axios)
+* [Sequelize ORM](https://sequelize.org/)
+* Testing
+  * [Jest](https://jestjs.io/)
+  * [Nock](https://github.com/nock/nock)
+  * [SuperTest](https://github.com/visionmedia/supertest)
 
 ### Resources
 * https://github.com/github/gitignore
