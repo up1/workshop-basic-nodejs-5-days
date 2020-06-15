@@ -1,7 +1,7 @@
 # Workshop :: Basic Node.js 5 days
 * Day 1
   * Introduction to Node.js
-  * Eveent loop
+  * Event loop
   * Asynchronous programming model
     * Callback
     * [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
