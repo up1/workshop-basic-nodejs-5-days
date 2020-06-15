@@ -16,7 +16,7 @@
   * ForEach, For-in, For-of
   * Introduction to Node module system
   * Working with FS module (sync and async)
-  * Working with Axios libary/module
+  * Working with [Axios libary/module](https://github.com/axios/axios)
 * Day 2
 * Day 3
 * Day 4
