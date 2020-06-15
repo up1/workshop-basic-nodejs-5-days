@@ -22,3 +22,12 @@
 * Day 3
 * Day 4
 * Day 5
+
+### Node modules
+* [Validator](https://www.npmjs.com/package/validator)
+* [Chalk](https://www.npmjs.com/package/chalk)
+* [Axios](https://github.com/axios/axios)
+
+### Resources
+* https://github.com/github/gitignore
+* https://www.postman.com/
