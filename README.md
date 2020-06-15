@@ -1,4 +1,4 @@
-# Workshop :: basic Node.js 5 days
+# Workshop :: Basic Node.js 5 days
 * Day 1
   * Introduction to Node.js
   * Eveent loop
