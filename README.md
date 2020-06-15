@@ -4,20 +4,20 @@
   * Eveent loop
   * Asynchronous programming model
     * Callback
-    * Promise
+    * [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
     * Async/Await
-  * Class in JavaScript
+  * [Class in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
   * var vs const vs let
-  * Array in JavaScript
+  * [Array in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
     * iterate
     * access/set value
     * operation => filter, map, reduce, find
   * Object in JavaScript
   * ForEach, For-in, For-of
   * Introduction to Node module system
-  * Working with FS module (sync and async)
+  * Working with [FS module (sync and async)](https://nodejs.org/api/fs.html)
   * Working with [Axios libary/module](https://github.com/axios/axios)
-  * Error handling
+  * [Error handling](https://nodejs.org/api/errors.html)
 * Day 2
 * Day 3
 * Day 4
