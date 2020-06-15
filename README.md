@@ -3,9 +3,9 @@
   * Introduction to Node.js
   * Event loop
   * Asynchronous programming model
-    * Callback
+    * [Callback](https://javascript.info/callbacks)
     * [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-    * Async/Await
+    * [Async/Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
   * [Class in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
   * var vs const vs let
   * [Array in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
