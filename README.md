@@ -1,11 +1,11 @@
 # Workshop :: Basic Node.js 5 days
 * Day 1
   * Introduction to Node.js
-  * Eveent loop
+  * Event loop
   * Asynchronous programming model
-    * Callback
+    * [Callback](https://javascript.info/callbacks)
     * [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-    * Async/Await
+    * [Async/Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
   * [Class in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
   * var vs const vs let
   * [Array in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
@@ -22,3 +22,17 @@
 * Day 3
 * Day 4
 * Day 5
+
+### Node modules
+* [Validator](https://www.npmjs.com/package/validator)
+* [Chalk](https://www.npmjs.com/package/chalk)
+* [Axios](https://github.com/axios/axios)
+* [Sequelize ORM](https://sequelize.org/)
+* Testing
+  * [Jest](https://jestjs.io/)
+  * [Nock](https://github.com/nock/nock)
+  * [SuperTest](https://github.com/visionmedia/supertest)
+
+### Resources
+* https://github.com/github/gitignore
+* https://www.postman.com/
