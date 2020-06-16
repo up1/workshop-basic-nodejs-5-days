@@ -1,5 +1,5 @@
 const yargs = require("yargs");
-const productService = require("./product-service")
+const productService = require("./product-service");
 yargs.command({
   command: "add",
   describe: "Add a new product",
@@ -17,17 +17,17 @@ yargs.command({
     },
   },
   handler(xxx) {
-    console.log(xxx.name, xxx.price);
     productService.add(xxx.name, xxx.price);
+    console.log(`Added new product wiht ${xxx.name}`);
   },
 });
 
 yargs.command({
-    command: "list",
-    describe: "List all products",
-    handler(xxx) {
-      console.log(productService.getAll());
-    },
-  });
+  command: "list",
+  describe: "List all products",
+  handler(xxx) {
+    console.log(productService.getAll());
+  },
+});
 
 yargs.parse();

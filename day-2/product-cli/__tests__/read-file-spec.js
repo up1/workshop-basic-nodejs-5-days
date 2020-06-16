@@ -2,7 +2,7 @@
 const fs = require("fs");
 const productService = require("../src/product-service");
 
-test("Write file wittht mock file system module", async () => {
+test("Write file with mock file system module", async () => {
   jest.restoreAllMocks();
   let callback;
   jest.spyOn(fs, "writeFile").mockImplementation((path, data, cb) => {
@@ -12,7 +12,15 @@ test("Write file wittht mock file system module", async () => {
   expect(fs.writeFile).toBeCalledTimes(1);
 });
 
-test("Add product", async () => {
-    jest.restoreAllMocks();
-    productService.add("temp", 111);
-  });
+test("Read file with mock file system module", async () => {
+  jest.restoreAllMocks();
+  let callback;
+  jest.spyOn(fs, "readFileSync").mockImplementation();
+  productService.getAll();
+  expect(fs.readFileSync).toBeCalledTimes(1);
+});
+
+test("Add product to real file system", async () => {
+  jest.restoreAllMocks();
+  productService.add("temp", 111);
+});

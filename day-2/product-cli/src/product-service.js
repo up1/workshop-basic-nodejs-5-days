@@ -1,5 +1,4 @@
 "use strict";
-
 const fs = require("fs");
 
 const add = async (name, price) => {
@@ -26,3 +25,4 @@ const getAll = () => {
 };
 
 module.exports = { add, getAll };
+s;
