@@ -19,6 +19,17 @@
   * Working with [Axios libary/module](https://github.com/axios/axios)
   * [Error handling](https://nodejs.org/api/errors.html)
 * Day 2
+  * ES6 features
+    * Spread operator
+    * Deestrucuring assignment
+    * Rest operator
+  * Testing with HTTP client axios with [Nock module](https://github.com/nock/nock)
+  * Testing with fs module wittht [Jest mocking](https://jestjs.io/docs/en/manual-mocks)
+  * Workshop with Command-line application
+    * [Yargs](https://github.com/yargs/yargs)
+    * Working with JSON data (using JSON.parse() and JSON.sttringify())
+    * Read and Write file with fs module
+    * Working with Array
 * Day 3
 * Day 4
 * Day 5
