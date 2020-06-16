@@ -22,4 +22,12 @@ yargs.command({
   },
 });
 
+yargs.command({
+    command: "list",
+    describe: "List all products",
+    handler(xxx) {
+      console.log(productService.getAll());
+    },
+  });
+
 yargs.parse();

@@ -25,4 +25,4 @@ const getAll = () => {
   }
 };
 
-module.exports = { add };
+module.exports = { add, getAll };
