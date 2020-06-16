@@ -17,8 +17,8 @@ const add = async (name, price) => {
 };
 
 const getAll = () => {
-  const result = fs.readFileSync("product.json");
   try {
+    const result = fs.readFileSync("product.json");
     return JSON.parse(result.toString());
   } catch (error) {
     return [];
