@@ -44,6 +44,7 @@
 * Day 5
 
 ### Node modules
+* [Prettier](https://prettier.io/)
 * [Validator](https://www.npmjs.com/package/validator)
 * [Chalk](https://www.npmjs.com/package/chalk)
 * [Axios](https://github.com/axios/axios)
