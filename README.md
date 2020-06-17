@@ -48,6 +48,7 @@
 * [Chalk](https://www.npmjs.com/package/chalk)
 * [Axios](https://github.com/axios/axios)
 * [Sequelize ORM](https://sequelize.org/)
+* [Node PostgreSQL](https://node-postgres.com/)
 * Testing
   * [Jest](https://jestjs.io/)
   * [Nock](https://github.com/nock/nock)
