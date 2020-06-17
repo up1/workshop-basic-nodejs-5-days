@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const config = {
   database: "product_db",
   username: "user",
