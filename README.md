@@ -35,6 +35,7 @@
       * [Sequelize](https://sequelize.org/) :: ORM library for Node.js
       * [Sequelize-cli](https://github.com/sequelize/cli)
       * [Sequelize-auto-v3](https://www.npmjs.com/package/sequelize-auto-v3)
+      * Database migration with Sequelize
     * Use library/module
       * Manage Environment Variables
         * [DotEnv](https://www.npmjs.com/package/dotenv)
