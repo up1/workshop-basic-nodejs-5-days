@@ -31,6 +31,14 @@
     * Read and Write file with fs module
     * Working with Array
 * Day 3
+    * Working with database (PostgreSQL)
+      * [Sequelize](https://sequelize.org/) :: ORM library for Node.js
+      * [Sequelize-cli](https://github.com/sequelize/cli)
+      * [Sequelize-auto-v3](https://www.npmjs.com/package/sequelize-auto-v3)
+    * Use library/module
+      * Manage Environment Variables
+        * [DotEnv](https://www.npmjs.com/package/dotenv)
+        * [Dotenv-cli](https://www.npmjs.com/package/dotenv-cli)
 * Day 4
 * Day 5
 
