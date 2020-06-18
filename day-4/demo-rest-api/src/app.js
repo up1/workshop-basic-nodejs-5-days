@@ -4,7 +4,20 @@ const homeRouter = require("./routers/home-router");
 const userRouter = require("./routers/user-router");
 
 server.use(express.json());
-server.use(homeRouter);
-server.use("/api/", userRouter);
+
+const routes = [
+  {
+    prefix: "",
+    target: homeRouter,
+  },
+  {
+    prefix: "/api",
+    target: userRouter,
+  },
+];
+
+for (let route of routes) {
+  server.use(route.prefix, route.target);
+}
 
 module.exports = server;
