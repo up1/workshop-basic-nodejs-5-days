@@ -14,7 +14,16 @@ async function getAll() {
   }
 }
 
-module.exports = { getAll };
+async function create(newUser) {
+  try {
+    const result = await userModel.create(newUser);
+    return result;
+  } catch (error) {
+    return false;
+  }
+}
+
+module.exports = { getAll, create };
 
 // Create a new user
 // userModel.User.create({
