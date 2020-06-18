@@ -1,10 +1,10 @@
 const express = require("express");
 const server = express();
-
-server.use(express.json());
 const homeRouter = require("./routers/home-router");
 const userRouter = require("./routers/user-router");
+
+server.use(express.json());
 server.use(homeRouter);
-server.use(userRouter);
+server.use("/api/", userRouter);
 
 module.exports = server;
