@@ -19,7 +19,7 @@ async function create(newUser) {
     const result = await userModel.create(newUser);
     return result;
   } catch (error) {
-    return false;
+    return error;
   }
 }
 

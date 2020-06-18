@@ -2,16 +2,24 @@ const userService = require("../../src/user-service");
 
 jest.clearAllMocks();
 jest.mock("../../src/models/user-model", () => () => {
+  const { ValidationError, ValidationErrorItem } = require("sequelize");
   const SequelizeMock = require("sequelize-mock");
   const dbMock = new SequelizeMock();
-  const myData = dbMock.define("User_pui");
+  let myData = dbMock.define("User_pui");
+
+  const itemError = new ValidationErrorItem(
+    "email",
+    "Not a valid email address",
+    "InvalidEmail"
+  );
+  const error = new ValidationError("Error", [itemError]);
+  jest.spyOn(myData, "create").mockRejectedValue(error);
+
   return myData;
 });
 
-test("Create new user", async () => {
-  const result = await userService.create({
-    firstName: "fake firstname",
-    lastname: "L",
-  });
-  expect(result.firstName).toEqual("fake firstname");
+test("Error from validation", async () => {
+  const myUser = {};
+  const result = await userService.create(myUser);
+  expect(result).toEqual("Username is too short");
 });
