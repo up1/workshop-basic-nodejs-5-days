@@ -1,32 +1,14 @@
-const Sequelize = require("sequelize");
-const Model = Sequelize.Model;
-
-class User extends Model {}
-
-// Create table user in database
-function createUser(db) {
-  User.init(
+module.exports = (sequelize, DataTypes) => {
+  const User_pui = sequelize.define(
+    "User_pui",
     {
-      // attributes
-      id: {
-        type: Sequelize.UUID,
-        primaryKey: true,
-        allowNull: false,
-      },
-      firstName: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      lastName: {
-        type: Sequelize.STRING,
-      },
+      firstName: DataTypes.STRING,
+      lastName: DataTypes.STRING,
     },
-    {
-      sequelize: db, // DB Connection
-      modelName: "user_up1", // Tablename
-      freezeTableName: true,
-    }
+    {}
   );
-}
-
-module.exports = { User, createUser };
+  User_pui.associate = function (models) {
+    // associations can be defined here
+  };
+  return User_pui;
+};

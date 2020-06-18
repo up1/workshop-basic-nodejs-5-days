@@ -1,13 +1,16 @@
 // Database connection
 const db = require("./db");
+const Sequelize = require("sequelize");
 const uuid = require("uuid");
-const userModel = require("./models/user-model");
-userModel.createUser(db);
+const userModel = require("./models/user-model.js")(db, Sequelize);
 // Find
-userModel.User.findAll().then((users) => {
-  const results = JSON.parse(JSON.stringify(users, null, 4));
-  console.log(results[0]);
-});
+
+async function getAll() {
+  const users = await userModel.findAll();
+  return users;
+}
+
+module.exports = { getAll };
 
 // Create a new user
 // userModel.User.create({

@@ -6,16 +6,16 @@ const sequelize = new Sequelize(config);
 
 // Dev mode
 // sequelize.sync({ force: true });
-sequelize.sync();
+// sequelize.sync();
 
 // Test connection
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log("Connection has been established successfully.");
-  })
-  .catch((err) => {
-    console.error("Unable to connect to the database:", err);
-  });
+// sequelize
+//   .authenticate()
+//   .then(() => {
+//     console.log("Connection has been established successfully.");
+//   })
+//   .catch((err) => {
+//     console.error("Unable to connect to the database:", err);
+//   });
 
 module.exports = sequelize;
