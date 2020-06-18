@@ -11,12 +11,6 @@ jest.mock("../src/models/user-model", () => () => {
       lastName: "Last",
       createdAt: "2020-01-01 13:30:31",
     }),
-    myData.build({
-      id: 2,
-      firstName: "First",
-      lastName: "Last",
-      createdAt: "2020-01-01 13:30:31",
-    }),
   ]);
   return myData;
 });
