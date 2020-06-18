@@ -2,6 +2,13 @@ const express = require("express");
 const userService = require("../services/user-service");
 const router = express.Router();
 
+router.get("/users/:id", async (req, res) => {
+  res.send({
+    id: req.params.id,
+    limit: req.query.limit, // ?limit=100
+  });
+});
+
 router.get("/users", async (req, res) => {
   userService
     .getAll()
