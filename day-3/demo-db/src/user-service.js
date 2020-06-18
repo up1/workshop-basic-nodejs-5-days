@@ -6,8 +6,12 @@ const userModel = require("./models/user-model.js")(db, Sequelize);
 // Find
 
 async function getAll() {
-  const users = await userModel.findAll();
-  return users;
+  try {
+    const users = await userModel.findAll();
+    return users;
+  } catch (error) {
+    return [];
+  }
 }
 
 module.exports = { getAll };
