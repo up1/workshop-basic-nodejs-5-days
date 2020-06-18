@@ -18,7 +18,3 @@ $sequelize-cli db:migrate --models-path ./src/models
 ```
 
 ### 2 :: Develop the database connection and user service
-
-```
-
-```

@@ -19,6 +19,9 @@ router.get("/users", async (req, res) => {
 
 router.post("/users", (req, res) => {
   const user = req.body;
+  // Validate request's data
+
+  // Call service
   userService
     .addNew(user)
     .then((createdUser) => {
