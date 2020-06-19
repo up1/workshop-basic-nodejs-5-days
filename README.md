@@ -41,7 +41,30 @@
         * [DotEnv](https://www.npmjs.com/package/dotenv)
         * [Dotenv-cli](https://www.npmjs.com/package/dotenv-cli)
 * Day 4
+  * Testing database with Jest + Sequelize
+    * Jest
+    * Sequelize mock
+  * Develope REST APIs wiht [express](https://expressjs.com/)
+    * Better sttructure of projeect
+    * Using router
+    * Bsic of middleware 
+    * Workshop :: Integrate with Database (Sequelize + PostgreSQL)
 * Day 5
+    * API testing
+      * Postman
+      * SuperTeest
+    * Develope REST APIs with express
+      * Middleware
+      * Error handling
+      * Logging
+    * Authentication and Authorization your API
+      * Middleware
+      * Working wittht JWT
+    * Introduction to [TypeScript](https://www.typescriptlang.org/)
+      * Setup project with TypeScript
+      * Express and TypeScript
+      * Workshop
+      
 
 ### Node modules
 * [Prettier](https://prettier.io/)
