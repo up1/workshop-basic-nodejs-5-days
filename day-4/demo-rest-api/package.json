@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-server": "node src/index.js",
-    "test": "jest --coverage --forceExit --detectOpenHandles"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,8 @@
     "@types/jest": "^26.0.0",
     "jest": "^26.0.1",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
