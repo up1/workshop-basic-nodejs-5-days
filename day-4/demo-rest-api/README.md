@@ -22,5 +22,6 @@ $sequelize-cli db:migrate --models-path ./src/models
 ### API testing with [Newman](https://www.npmjs.com/package/newman#using-reporters-with-newman)
 
 ```
+$npm install -g newman
 $newman run demo-api.postman_collection.json -r cli,html
 ```

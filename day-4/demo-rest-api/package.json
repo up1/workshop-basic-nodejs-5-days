@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-server": "node src/index.js",
+    "test": "jest --coverage --forceExit --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,12 @@
   "dependencies": {
     "express": "^4.17.1",
     "pg": "^8.2.1",
-    "sequelize": "^5.21.13"
+    "sequelize": "^5.21.13",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
   }
 }
