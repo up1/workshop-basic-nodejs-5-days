@@ -18,3 +18,9 @@ $sequelize-cli db:migrate --models-path ./src/models
 ```
 
 ### 2 :: Develop the database connection and user service
+
+### API testing with [Newman](https://www.npmjs.com/package/newman#using-reporters-with-newman)
+
+```
+$newman run demo-api.postman_collection.json -r cli,html
+```
