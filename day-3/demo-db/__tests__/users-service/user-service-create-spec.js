@@ -13,7 +13,7 @@ jest.mock("../../src/models/user-model", () => () => {
     "InvalidEmail"
   );
   const error = new ValidationError("Error", [itemError]);
-  jest.spyOn(myData, "create").mockRejectedValue(error);
+  jest.spyOn(myData, "create").mockRejectedValue(new Error("XXX"));
 
   return myData;
 });
@@ -21,5 +21,5 @@ jest.mock("../../src/models/user-model", () => () => {
 test("Error from validation", async () => {
   const myUser = {};
   const result = await userService.create(myUser);
-  expect(result).toEqual("Username is too short");
+  expect(result).toBeFalsy();
 });
